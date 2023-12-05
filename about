@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!--==================== EMAIL SERVICE ====================-->
+        <!-- Sweet Alert -->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <!-- Email.JS -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                emailjs.init('gF3M_-jS8KuvoCpV4');
+            })();
+        </script>
+
+        <!--==================== CALENDAR SERVICE ====================-->
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+        <!--==================== TITLE and Favicon ====================-->
+        <title>Olasunkanmi Arowolo</title>
+        <!-- <link rel="shortcut icon" type="image/png" href="assets/img/"> --> 
+        <link rel="apple-touch-icon" sizes="180x180" class="circle-frame" href="/assets/favicon_io/oa-logo-yellow-bgrd-480x480.png">
+        <link rel="icon" type="image/png" sizes="32x32" class="circle-frame" href="/assets/favicon_io/oa-logo-yellow-bgrd-480x480.png">
+        <link rel="icon" type="image/png" sizes="16x16"  class="circle-frame" href="/assets/favicon_io/oa-logo-yellow-bgrd-480x480.png">
+        <!-- <link rel="manifest" href="/site.webmanifest"> -->
+
+        <!-- MS Tile - for Microsoft apps-->
+        <meta name="msapplication-TileImage" content="https://github.com/nucerl/myPortfolio/blob/main/assets/snaps/light.png?raw=true" />    
+
+        <!-- HTML Meta Tags -->
+        <title>Olasunkanmi Arowolo</title>
+        <meta name="description" content="High-level experience in nuclear safety analysis and multinational nuclear project development.">
+
+        <!-- Facebook Meta Tags -->
+        <meta property="og:url" content="https://www.olaarowolo.com/">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Olasunkanmi Arowolo">
+        <meta property="og:description" content="Explore the professional profile of Olasunkanmi Arowolo, a Lecturer in Journalism, Media & Development Communication Expert, and enthusiastic DevOps. Discover his academic achievements, creative skills, publications, and contact information. Connect with Ola to bring ideas to life.">
+        <meta property="og:image" content="/assets/favicon_io/oa-logo-yellow-bgrd-480x480.png">
+
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="twitter:domain" content="olaarowolo.com">
+        <meta property="twitter:url" content="https://www.olaarowolo.com/">
+        <meta name="twitter:title" content="Ola Arowolo's Portfolio 👋">
+        <meta name="twitter:description" content="Explore the professional profile of Olasunkanmi Arowolo, a Lecturer in Journalism, Media & Development Communication Expert, and enthusiastic DevOps. Discover his academic achievements, creative skills, publications, and contact information. Connect with Ola to bring ideas to life.">
+        <meta name="twitter:image"  class="circle-frame" content="/assets/favicon_io/oa-logo-yellow-bgrd-480x480.png">
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-2367QRTG56"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-2367QRTG56');
+        </script>
+
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+   <script>
+      $(function() {
+         $("#includeHtml").load("gscholar_insights.html");
+      });
+   </script>
+
+    </head>
+
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="https://olaarowolo.com/" class="nav__logo">Olasunkanmi Arowolo</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <!-- <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li> -->
+                        <li class="nav__item">
+                            <a href="https://olaarowolo.com/#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i> About
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="https://olaarowolo.com/#skills" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i> Skills
+                            </a>
+                        </li>
+                        <!-- <li class="nav__item">
+                            <a href="#projects" class="nav__link">
+                                <i class="uil uil-briefcase-alt nav__icon"></i> Projects
+                            </a>
+                        </li> -->
+                        <li class="nav__item">
+                            <a href="https://olaarowolo.com/#paper" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i> Publications
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="https://olaarowolo.com/#press" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i> Press
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="https://olaarowolo.com/#videos" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i> Vlog
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="https://olaarowolo.com/#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme Change Buttons -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home" data-id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/olasunkanmi-arowolo-5619a165/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+                            <a href="https://www.researchgate.net/profile/Sunday-Arowolo" target="_blank" class="home__social-icon">
+                                <i class="uil uil-book-open"></i>
+                            </a>
+                            <!-- <a href="https://github.com/nucerl" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a> -->
+                        </div>
+
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+
+                                    <image class="home__blob-img" x='12' y='18' xlink:href="assets/img/profile-photo.png"/>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="home__data">
+                            <h1 class="home__title">Olasunkanmi Arowolo</h1>
+                            <h3 class="home__subtitle">Background</h3>
+                            <p class="home__description">
+                                Olasunkanmi Arowolo is an dedicated Assistant Lecturer and PhD researcher (University of Kent) specialising in Journalism. With an achievement of earning his Bachelor's degree at the age of 22 from Lagos State University (LASU), Arowolo distinguished himself as the youngest academic staff member upon his employment in 2017. He brings a strong background in media production to his work, providing a unique perspective that blends both academic and industry experience.
+                                <br> 
+                                <br> 
+                                Known for his innovative approach to education, Arowolo has made headlines for pioneering the use of a mobile classroom. By leveraging digital technology, he enhances the learning experience for his students and ensures they are equipped with the skills necessary in today's digital age. This forward-thinking mindset exemplifies his commitment to staying at the forefront of educational advancements.
+                                <br> 
+                                <br> 
+                                Arowolo's research interests revolve around advancing journalism practices and exploring innovative approaches. He has founded the Pan-African Journal Database, a valuable resource aimed at digitising journals of African origin. Through this initiative, Arowolo seeks to improve the global visibility of research originating from Africa, making it more accessible and impactful.
+                                <br> 
+                                <br> 
+                                Recognised for his outstanding commitment to education, Arowolo is a highly regarded lecturer in the Department of Journalism at the esteemed School of Communication. Hailing from Iba in Ojo Local Government Area of Lagos State, he expertly combines his academic expertise with industry experience to inspire and educate the next generation of journalists. With his passion for journalism and dedication to academic excellence, Arowolo is making significant contributions to the field and shaping the future of journalism education.</p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll Down</span>
+                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div> -->
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="home__container container grid">
+                <!-- <div class="section__subtitle"> -->
+                    <div class="about__info" >
+                            <div>
+                                <span class="about__info-title">06+</span>
+                                <span class="about__info-name">Years' <br> Experience</span>
+                            </div>
+
+                            <div>
+                                <span class="about__info-title">02</span>
+                                <span class="about__info-name">Academic Projects <br> Completed</span>
+                            </div>
+
+                            <div>
+                                <span class="about__info-title">04</span>
+                                <span class="about__info-name">Papers <br> Published</span>
+                            </div>
+                            <div>
+                                <span class="about__info-title">03</span>
+                                <span class="about__info-name">Book <br> Chapters</span>
+                            </div>
+                
+                        
+                    </div>
+                    <div class="about__buttons" style="size: 20rem;">
+                        <a href="javascript:void(0);" onclick="openPDFInPreview('assets/pdf/OlaArowolo-AcadPathwayCV.pdf');" class="button button--flex" style="font-size: 11px;">
+                            Academic CV<i class="uil uil-download-alt button__icon"></i>
+                        </a>            
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        <div class="about__buttons" style="size: 20rem;">
+                            <a href="javascript:void(0);" onclick="openPDFInPreview('assets/pdf/OlaArowolo-CreativePathwayCV.pdf');" class="button button--flex" style="font-size: 11px;">
+                                Creative CV<i class="uil uil-download-alt button__icon"></i>
+                            </a>     
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    
+            </div>
+        </section> 
+
+
+           
+        <!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section" id="testimonials">
+                <h2 class="section__title">References</h2>
+                <span class="section__subtitle">Testimonials</span>
+
+                <div class="testimonial__container container swiper">
+                    <div class="swiper-wrapper">
+                         <!--==================== TESTIMONIAL 1 ====================-->
+                         <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="https://media.licdn.com/dms/image/C5603AQEKTGUX4jwPUA/profile-displayphoto-shrink_800_800/0/1517491448761?e=1706140800&v=beta&t=pdGaJd-fYlq61RX99guDFjfxHiCdbvn3WFjxICoMCG0" alt="" class="testimonial__img">
+
+                                    <div>
+                                        <h3 class="testimonial__name">Jo Collins</h3>
+                                        <span class="testimonial__client">Coaching Programmes Lead and Consultant Researcher, Research Coach UK, and Senior Lecturer Counselling, Coaching and Mentoring at Christ Church University</span>
+                                    </div>
+                                </div>
+                                <!-- <div>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                </div> -->
+                            </div>
+                            <p class="testimonial__description">Olasunkanmi is a conscientious and dedicated researcher, who supports his colleagues and works hard to demystify the PhD and share his knowledge with others.</p>
+                         </div>
+                         
+                         <!--==================== TESTIMONIAL 2 ====================-->
+                         <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="https://media.licdn.com/dms/image/C5603AQGmfhT7Nwfkgg/profile-displayphoto-shrink_800_800/0/1619809067050?e=2147483647&v=beta&t=Uz8rTStKliN9VzxUu6-OM56rbhVva2RmGY41tn_Gvqw" alt="" class="testimonial__img">
+
+                                    <div>
+                                        <h3 class="testimonial__name"> Ayobami Okerinde</h3>
+                                        <span class="testimonial__client">Reporter, Vanguard Newspaper</span>
+                                    </div>
+                                </div>
+                                <!-- <div>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                </div> -->
+                            </div>
+                            <p class="testimonial__description">Olasunkanmi Arowolo is a professional with excellence as his motto. He recommended me for my first gig in 2022, designing a 32-page newspaper for students in their penultimate year at the Lagos State University, Faculty of Media and Communication Studies. I have worked with him at different times, and I can attest to his quality and prompt service delivery.
+                            </p>
+                         </div>
+                        <!--==================== TESTIMONIAL 3 ====================-->  
+                        <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="https://richardgeorgefoundation.com/wp-content/uploads/2021/05/DSC0075-edited-2-1-1-1365x2048.jpg" alt="" class="testimonial__img">
+
+                                    <div>
+                                        <h3 class="testimonial__name">Richard George</h3>
+                                        <span class="testimonial__client">Founder,  <a href="https://richardgeorgefoundation.com/team/richard-george/" style="color: grey;" > Richard George Foundation (RGF)
+                                        </a></span>
+                                    </div>
+                                </div>
+                                <!-- <div>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                </div> -->
+                            </div>
+                            <p class="testimonial__description">Olasunkanmi delivers quality of service with consistency! That is the reason he is our Go-To expert on Multi Media Management.</p>
+                        </div>
+                          <!--==================== TESTIMONIAL 4 ====================-->
+                        <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="https://ptccentre.org/wp-content/uploads/2020/01/P-Mavis.jpg" alt="" class="testimonial__img">
+
+                                    <div>
+                                        <h3 class="testimonial__name">Mavis Orji</h3>
+                                        <span class="testimonial__client">Lead Pastor, <a href="https://ptccentre.org/our-pastor/" style="color: grey;">Potter’s Transformation Christian Centre</a></span>
+                                    </div>
+                                </div>
+                                <!-- <div>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                </div> -->
+                            </div>
+                            <p class="testimonial__description">Olasunkanmi is vast, pays attention to details and delivers efficient and quality services</p>
+                        </div>
+                          <!--==================== TESTIMONIAL 5 ====================-->
+                        <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="https://media.licdn.com/dms/image/C4E03AQHPlUakHHR9uw/profile-displayphoto-shrink_200_200/0/1608874074601?e=1706140800&v=beta&t=78pWfwAbWhoQ6Ta3voWrdMSBHOUQJZJmXjQbggK6BPQ" alt="" class="testimonial__img">
+
+                                    <div>
+                                        <h3 class="testimonial__name">Oluwaseye Ogunsanya </h3>
+                                        <span class="testimonial__client">Fact-Checker, <a href="https://africacheck.org" style="color: grey;"> FactCheckAfrica</a></span>
+                                    </div>
+                                </div>
+                                <!-- <div>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                </div> -->
+                            </div>
+                            <p class="testimonial__description">OA as he's fondly called is one of the most resourceful persons I've met and his enthusiasm and passion for work is inspiring.</p>
+                        </div>
+                          <!--==================== TESTIMONIAL 6 ====================-->
+                        <div class="testimonial__content swiper-slide">
+                            <div class="testimonial__data">
+                                <div class="testimonial__header">
+                                    <img src="https://media.licdn.com/dms/image/C4E03AQFhLO8JXZBSGA/profile-displayphoto-shrink_200_200/0/1639775227121?e=1706140800&v=beta&t=TdNN4zmQ1IA2mBnCr0gxpiHti0kj_sxmPDc32M0w_64" alt="" class="testimonial__img">
+
+                                    <div>
+                                        <h3 class="testimonial__name">Oladimeji Kehinde</h3>
+                                        <span class="testimonial__client">Secretary,<a href="#" style="color: grey;"> Michigor Attorneys. Nigeria</a></span>
+                                    </div>
+                                </div>
+                                <!-- <div>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                    <i class="uil uil-star testimonial__icon-star"></i>
+                                </div> -->
+                            </div>
+                            <p class="testimonial__description">Olasunkanmi taught me in my undergraduate level and he fuelled my passion for content creation. I enjoy being a YouTuber because he discovered the talent in me.
+                            </p>
+                        </div>
+                          <!--==================== TESTIMONIAL #4 ====================-->
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination-testimonial"></div>
+                </div>
+                
+               <!-- Button to submit testimonials-->
+               <div style="display: flex;      justify-content: center; padding-top: 20px;">
+                    <a href="https://m9x8exu02et.typeform.com/to/YTm7XEq1" target="_blank" class="button button--flex button--white">
+                        Submit a testimonial now
+                        <i class="uil uil-message  project_icon button__icon"></i>
+                    </a>
+                </div>
+                    </div>
+                </div>
+            </section>
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <a href="#" class="footer__title">Ola Arowolo</a><br>
+                        <span class="footer__subtitle">cademic, Edupreneur, Digital Creative, Consultant, Coach & Trainer<</span>
+                    </div>
+
+                    <ul class="footer__links">
+                        <!-- <li>
+                            <a href="#projects" class="footer__link">Projects</a>
+                        </li> -->
+                        <li>
+                            <a href="https://olaarowolo.com/#paper" class="footer__link">Publications</a>
+                        </li>
+                        <li>
+                            <a href="https://olaarowolo.com/#testimonials" class="footer__link">Testimonials</a>
+                        </li>
+                        <li>
+                            <a href="https://olaarowolo.com/#videos" class="footer__link">Videos</a>
+                        </li>
+                        <li>
+                            <a href="https://olaarowolo.com/#connect" class="footer__link">Connect</a>
+                        </li>
+                        <li>
+                            <a href="https://olaarowolo.com/#presentation" class="footer__link">Lectures</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__socials">
+                        <a href="https://www.linkedin.com/in/olasunkanmi-arowolo-5619a165/" target="_blank" class="footer__social">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+
+                        <a href="https://www.researchgate.net/profile/Sunday-Arowolo" target="_blank" class="footer__social">
+                            <i class="uil uil-book-open"></i>
+                        </a>
+                        <a href="https://www.researchgate.net/profile/Sunday-Arowolo" target="_blank" class="footer__social">
+                            <i class="uil facebook"></i>
+                        </a>
+
+                        <!-- <a href="https://github.com/nucerl" target="_blank" class="footer__social">
+                            <i class="uil uil-github-alt"></i>
+                        </a> -->
+
+                    </div>
+                </div>
+
+                <p class="footer__copy">&#169; All rights reserved.</p>
+            </div>
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        <a href="" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
