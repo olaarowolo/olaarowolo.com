@@ -1,0 +1,18 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://www.olaarowolo.com/sitemap.xml
+
+# Allow Googlebot to crawl CSS and JS files
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/pdf/
+
+
+# Crawl delay can be set if needed (uncomment below)
+# Crawl-delay: 10
+
+# Additional SEO recommendations:
+# - Use canonical URLs in HTML head
+# - Ensure mobile-friendly design (already present)
+# - Use structured data (JSON-LD) for rich snippets
