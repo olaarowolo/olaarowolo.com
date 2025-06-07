@@ -173,6 +173,14 @@ function scrollUp() {
 }
 window.addEventListener("scroll", scrollUp);
 
+const scrollUpBtn = document.getElementById("scroll-up");
+if (scrollUpBtn) {
+  scrollUpBtn.addEventListener("click", function(event) {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+
 /*==================== DARK LIGHT THEME ====================*/
 const themeButton = document.getElementById("theme-button");
 const darkTheme = "dark-theme";
