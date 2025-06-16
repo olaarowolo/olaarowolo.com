@@ -92,16 +92,20 @@
             left: 0;
             width: 100%;
             background: #f9f9f9a4;
+            -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
-            padding: 50px 0;
+            padding: 0px 0;
+            padding-bottom: 20px; /* space for slider height */
             box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
             z-index: 50; /* lower than menu */
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
           }
 
           /* Slider title styling */
           .logo-slider-title {
             text-align: center;
-            font-size: 20px;
+            font-size: 15px;
             font-weight: bold;
             margin-bottom: 5px;
             letter-spacing: 1px;
@@ -116,7 +120,7 @@
           }
 
           .logo-slider img {
-            max-height: 50px;
+            max-height: 30px;
             width: auto;
             opacity: 0.75;
             transition: transform 0.4s ease, opacity 0.4s ease;
@@ -1924,50 +1928,54 @@
         <div class="logo-slider-container">
           <div class="logo-slider-title">AS SEEN IN</div>
           <div class="logo-slider">
-            <div>
+            <a href="https://www.thecable.ng/" target="_blank" rel="noopener noreferrer">
               <img src="https://www.thecable.ng/wp-content/uploads/2024/12/TheCable_Logo_Web-e1733085074893.png" alt="TheCable Logo">
-            </div>
-            <div>
+            </a>
+            <a href="https://www.premiumtimesng.com/" target="_blank" rel="noopener noreferrer">
               <img src="https://media.premiumtimesng.com/wp-content/files/2020/09/ptn-logo.png" alt="Premium Times Logo">
-            </div>
-            <div>
+            </a>
+            <a href="https://www.vanguardngr.com/" target="_blank" rel="noopener noreferrer">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Vanguard_Nigeria_logo.svg/512px-Vanguard_Nigeria_logo.svg.png?20240428115507" alt="Vanguard Logo">
-            </div>
-            <div>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Punch_logo.svg/1200px-Punch_logo.svg.png" alt="Logo 4">
-            </div>
-            <div>
+            </a>
+            <a href="https://punchng.com/" target="_blank" rel="noopener noreferrer">
+              <img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Punch_logo.svg/1200px-Punch_logo.svg.png" alt="Logo 4">
+            </a>
+            <a href="https://thesun.ng/" target="_blank" rel="noopener noreferrer">
               <img src="https://d1jcea4y7xhp7l.cloudfront.net/wp-content/uploads/2024/11/PHOTO-2024-11-11-23-52-15-2.jpg" alt="Logo 5">
-            </div>
-            <div>
+            </a>
+            <a href="https://dailytrust.com/" target="_blank" rel="noopener noreferrer">
               <img src="https://dailytrust.com/dailytrust.svg" alt="Logo 6">
-            </div>
+            </a>
           </div>
         </div>
 
         <!-- jQuery & Slick Slider -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <script>
-          $(document).ready(function(){
-            $('.logo-slider').slick({
-              slidesToShow: 4,
-              slidesToScroll: 1,
-              autoplay: true,
-              autoplaySpeed: 3000,
-              speed: 1000,
-              arrows: false,
-              dots: false,
-              infinite: true,
-              pauseOnHover: true,
-              responsive: [
-                { breakpoint: 1024, settings: { slidesToShow: 3 } },
-                { breakpoint: 768,  settings: { slidesToShow: 2 } },
-                { breakpoint: 480,  settings: { slidesToShow: 1 } }
-              ]
-            });
-          });
-        </script>
+            <script>
+              $(document).ready(function(){
+                setTimeout(function() {
+                  $('.logo-slider').slick({
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    speed: 3000,
+                    cssEase: 'cubic-bezier(0.4, 0, 0.2, 1)',
+                    arrows: false,
+                    dots: false,
+                    infinite: true,
+                    pauseOnHover: true,
+                    responsive: [
+                      { breakpoint: 1024, settings: { slidesToShow: 3 } },
+                      { breakpoint: 768,  settings: { slidesToShow: 2 } },
+                      { breakpoint: 480,  settings: { slidesToShow: 1 } }
+                    ]
+                  });
+                  $('.logo-slider-container').css('opacity', '1');
+                }, 1500);
+              });
+            </script>
 
         <!--==================== ICONS ====================-->
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
