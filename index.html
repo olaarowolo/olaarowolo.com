@@ -80,6 +80,74 @@
     </head>
 
     <body>
+        <!-- Slick Slider CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+        <style>
+          /* Sticky bottom slider container */
+          .logo-slider-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #f9f9f9a4;
+            backdrop-filter: blur(10px);
+            padding: 50px 0;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+            z-index: 50; /* lower than menu */
+          }
+
+          /* Slider title styling */
+          .logo-slider-title {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+          }
+
+          /* Slick slide styling */
+          .logo-slider .slick-slide {
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            padding: 0 15px;
+          }
+
+          .logo-slider img {
+            max-height: 50px;
+            width: auto;
+            opacity: 0.75;
+            transition: transform 0.4s ease, opacity 0.4s ease;
+          }
+
+          .logo-slider img:hover {
+            transform: scale(1.05);
+            opacity: 1;
+          }
+
+          /* Add bottom padding to body to avoid content hidden behind slider */
+          body {
+            padding-bottom: 50px; /* enough for slider height */
+          }
+
+          /* On small screens, increase bottom padding to avoid menu overlap */
+          @media (max-width: 768px) {
+            body {
+              padding-bottom: 0;
+              padding-top: 140px; /* add top padding for slider at top */
+            }
+            .logo-slider-container {
+            padding: 20px 0;}
+            
+            .logo-slider-container {
+              top: 0;
+              bottom: auto;
+            }
+          }
+        </style>
+
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
@@ -1851,7 +1919,57 @@
                 <p class="footer__copy">&#169; All rights reserved.</p>
             </div>
         </footer>
-            <!--==================== ICONS ====================-->
+
+        <!-- AS SEEN IN Slider Sticky Bottom -->
+        <div class="logo-slider-container">
+          <div class="logo-slider-title">AS SEEN IN</div>
+          <div class="logo-slider">
+            <div>
+              <img src="https://www.thecable.ng/wp-content/uploads/2024/12/TheCable_Logo_Web-e1733085074893.png" alt="TheCable Logo">
+            </div>
+            <div>
+              <img src="https://media.premiumtimesng.com/wp-content/files/2020/09/ptn-logo.png" alt="Premium Times Logo">
+            </div>
+            <div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Vanguard_Nigeria_logo.svg/512px-Vanguard_Nigeria_logo.svg.png?20240428115507" alt="Vanguard Logo">
+            </div>
+            <div>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Punch_logo.svg/1200px-Punch_logo.svg.png" alt="Logo 4">
+            </div>
+            <div>
+              <img src="https://d1jcea4y7xhp7l.cloudfront.net/wp-content/uploads/2024/11/PHOTO-2024-11-11-23-52-15-2.jpg" alt="Logo 5">
+            </div>
+            <div>
+              <img src="https://dailytrust.com/dailytrust.svg" alt="Logo 6">
+            </div>
+          </div>
+        </div>
+
+        <!-- jQuery & Slick Slider -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+          $(document).ready(function(){
+            $('.logo-slider').slick({
+              slidesToShow: 4,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 3000,
+              speed: 1000,
+              arrows: false,
+              dots: false,
+              infinite: true,
+              pauseOnHover: true,
+              responsive: [
+                { breakpoint: 1024, settings: { slidesToShow: 3 } },
+                { breakpoint: 768,  settings: { slidesToShow: 2 } },
+                { breakpoint: 480,  settings: { slidesToShow: 1 } }
+              ]
+            });
+          });
+        </script>
+
+        <!--==================== ICONS ====================-->
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     
         <!--==================== SCROLL TOP ====================-->
